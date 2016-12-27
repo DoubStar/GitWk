@@ -37,7 +37,7 @@ class MyTestCase(unittest.TestCase):
         self.driver.find_element_by_name("首页").click()
         time.sleep(5)
         # self.driver.find_element_by_id("home").click()
-        print u'点击行程icon'
+        print '点击行程icon'
         self.driver.find_element_by_name("行程").click()
         time.sleep(5)
 
