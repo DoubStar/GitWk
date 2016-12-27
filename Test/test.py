@@ -25,7 +25,7 @@ def use_params_urllib2():
 
     print '>>>>Response Headers:'
     print response.info()
-    print '>>>>>Response status code'
+    print '>>>>>Response status code:'
     print response.getcode()
     print '>>>>Response Body:'
     text = ''.join([line for line in response.readlines()])
