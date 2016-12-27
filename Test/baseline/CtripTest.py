@@ -23,17 +23,21 @@ class MyTestCase(unittest.TestCase):
 
     # 释放实例,释放资源
     def tearDown(self):
-        self.driver.quit()
+        print u'关闭'
+        # self.driver.quit()
 
     def test_something(self):
         time.sleep(20)
         # self.driver.find_element_by_id("call").click()
+        print u'点击客服icon'
         self.driver.find_element_by_name("客服").click()
         time.sleep(5)
         # self.driver.find_element_by_id("home").click()
+        print u'点击首页icon'
         self.driver.find_element_by_name("首页").click()
         time.sleep(5)
         # self.driver.find_element_by_id("home").click()
+        print u'点击行程icon'
         self.driver.find_element_by_name("行程").click()
         time.sleep(5)
 
